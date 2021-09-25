@@ -1,0 +1,15 @@
+name: auto repo creation
+on: 
+  pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: private repo creation
+        uses: sarthakjdev/autorepo-create-on-pullrequest@auto-repo-creation
+        with:
+          organization: workflow-testing-org
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+    env:
+         TOKEN: ${{ secrets.TOKEN }}
