@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: private repo creation
-        uses: sarthakjdev/autorepo-create-on-pullrequest@pre-release-test-10
+        uses: sarthakjdev/autorepo-create-on-pullrequest@pre-release-test-11
         with:
           organization: workflow-testing-org
           repo-token: ${{ secrets.GITHUB_TOKEN }}
