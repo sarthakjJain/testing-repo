@@ -11,6 +11,5 @@ jobs:
         with:
           organization: workflow-testing-org
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          owner: sarthakjdev
     env:
          TOKEN: ${{ secrets.TOKEN }}
