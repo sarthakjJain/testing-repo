@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: auto repo creator on pull request
-        uses: devstrons/auto-repo-creator-on-pullRequest@v0.1
+        uses: sarthakjdev/auto-repo-creator-on-pullRequest@v0.0
         with:
           organization: workflow-testing-org
           repo-token: ${{ secrets.GITHUB_TOKEN }}
     env:
          TOKEN: ${{ secrets.TOKEN }}
+
